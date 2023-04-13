@@ -11,8 +11,10 @@ The output is prints to the console of the object's info or method results
 import random
 from Topic1.constants import MAX
 
+
 class NumberGuesser():
     """NumberGuesser class"""
+
     def __init__(self):
         self._guessed_list = []
         self._random_num = random.randint(1, MAX)

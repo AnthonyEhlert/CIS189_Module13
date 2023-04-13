@@ -59,14 +59,12 @@ class NumberGuesserTestCase(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.number_guesser.add_guess('1.1')
 
-
     def test_str(self):
         # manually set self._random_num variable
         self.number_guesser._random_num = 10
 
         self.assertFalse(self.number_guesser.add_guess(1))
         self.assertEqual(self.number_guesser.__str__(), "Guessed List: [1], Correct Number: 10")
-
 
 
 if __name__ == "__main__":
