@@ -58,7 +58,6 @@ main_window.title("Number Guessing Game")
 main_window.geometry("300x300")
 
 # create start button
-var_start_btn = ''
 start_btn = tk.Button(main_window, text="START", width=25, command=lambda: enable_game())
 start_btn.grid(row=1, column=1, rowspan=1, columnspan=3)
 
